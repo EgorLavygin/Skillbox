@@ -20,5 +20,8 @@ my_family_height = [
 #   Общий рост моей семьи - ХХ см
 my_family = ['Митяй', 'Мишаня', 'Бим']
 my_family_height = [['Митяй', 175], ['Мишаня', 175], ['Бим', 25]]
-print('Рост Бима - 25см')
-print('Общий рост моей семьи - 375см')
+height_bim = my_family_height[2][1]
+print('Рост Бима', (height_bim))
+global_height = my_family_height[0][1] + my_family_height[1][1]
+global_height += my_family_height[2][1]
+print('Общий рост моей семьи', (global_height))
